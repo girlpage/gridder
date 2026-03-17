@@ -1,0 +1,156 @@
+.m-plus-rounded-1c-regular {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+div {
+  font-size: 14px;
+}
+
+/* ------------------------
+   M PLUS Rounded 1c Font
+------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.m-plus-rounded-1c-regular {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#menuPanel {
+  position: fixed;            /* keep it fixed on screen */
+  top: 15px;                  /* distance from top */
+  right: 10px;                /* small gap from right edge */
+  width: 220px;               /* optional fixed width */
+  background-color: rgba(255, 255, 255, 0.3); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  color: #000;
+  z-index: 1000;              /* stay above canvas and other content */
+}
+
+/* Optional: make it slightly smaller on very small screens */
+@media (max-width: 600px) {
+  #menuPanel {
+    width: 180px;
+    right: 5px;
+    padding: 15px;
+  }
+}
+
+/* ------------------------
+   Generate Grid Button
+------------------------ */
+#generateGridButton {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #007bff; 
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-bottom: 15px;
+}
+
+#generateGridButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+#generateGridButton:active {
+  background-color: #004494; 
+  transform: translateY(0);
+}
+
+/* ------------------------
+   Shortcut & Label Styling
+------------------------ */
+.menuLabel {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+/* ------------------------
+   Input Fields Styling
+------------------------ */
+#menuPanel input,
+#menuPanel select {
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #666;       /* default dark grey border */
+  border-radius: 6px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#menuPanel input:focus,
+#menuPanel select:focus {
+  border-color: #333;           /* darker grey on focus */
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+/* ------------------------
+   Buttons Styling (Generate & Export)
+------------------------ */
+#menuPanel button {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #007bff; 
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#menuPanel button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+#menuPanel button:active {
+  background-color: #004494; 
+  transform: translateY(0);
+}
